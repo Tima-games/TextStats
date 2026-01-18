@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS-red)
 ![Last commit](https://img.shields.io/github/last-commit/Tima-games/TextStats)
 
-
+[English version] | [[Russian version](README.ru.md)]
 
 # CLI-utility Text Stats
 
