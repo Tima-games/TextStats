@@ -9,7 +9,7 @@
 
 Simple CLI tool written in Go to analyze text.
 
-I made this project for learning and just for fun, so don't be too serious.
+I made this project for learning Go, Git, GitHub and just for fun, so don't be too serious.
 
 ## Features
 - Count lines
