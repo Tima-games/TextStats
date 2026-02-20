@@ -1,4 +1,4 @@
-![Go](https://img.shields.io/badge/Go-1.25.5-blue)
+![Go](https://img.shields.io/badge/Go-1.26.0-blue)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](https://github.com/Tima-games/TextStats/blob/main/LICENSE)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS-red)
 ![Last commit](https://img.shields.io/github/last-commit/Tima-games/TextStats)
@@ -16,14 +16,27 @@ I made this project for learning Go, Git, GitHub and just for fun, so don't be t
 - Count words
 - Count letters (excluding spaces)
 - Count spaces
+- Read from file
 
 ## Usage
 ```Bash
-./textstats
+./textstats-[your version/arch]
 ```
 **Type your text**
 
 **Finish input with Control + D (Linux/MacOS)**
+
+or
+
+```Bash
+./textstats-[your version/arch] text.txt
+```
+**"text.txt"** - any text file. 
+
+*Correctly* supported formats: **any UTF-8 text file** 
+
+*For example:* .txt .md .go .py .json ...
+
 ## Example
 ```
 Hello world
@@ -32,6 +45,14 @@ In your string(s) 1 lines
 In your string(s) 2 words
 In your string(s) 1 spaces
 In your string(s) 10 letters
+```
+```
+text.txt
+
+In your string(s) 6 lines
+In your string(s) 29 words
+In your string(s) 19 spaces
+In your string(s) 78 letters
 ```
 ## Notes
 - Words are separated by whitespace
@@ -55,7 +76,7 @@ go build -o textstats
 - [x] Count letters
 - [x] Count spaces
 - [x] README
-- [ ] Read from file
+- [x] Read from file
 - [ ] Windows support
 
 ...and much more
