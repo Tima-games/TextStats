@@ -1,6 +1,8 @@
 # Go binaries
-textstats
-
+binaries/
 # File manager junk
 .directory
+# IDE configs
+.idea
+
 
