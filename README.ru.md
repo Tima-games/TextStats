@@ -1,4 +1,4 @@
-![Go](https://img.shields.io/badge/Go-1.25.5-blue)
+![Go](https://img.shields.io/badge/Go-1.26.6-blue)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](https://github.com/Tima-games/TextStats/blob/main/LICENSE)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS-red)
 ![Last commit](https://img.shields.io/github/last-commit/Tima-games/TextStats)
@@ -17,14 +17,26 @@
 - Подсчёт слов
 - Подсчёт символов (без пробелов)
 - Подсчёт пробелов
+- Чтение из файла
 
 ## Использование
 ```Bash
-./textstats
+./textstats-[ваша версия/архитектура]
 ```
 **Введите свой текст**
 
 **Завершите ввод Control + D (Linux/MacOS)**
+
+или
+
+```Bash
+./textstats-[ваша версия/архитектура] text.txt
+```
+**"text.txt"** - любой текстовый файл. 
+
+*Корректнно* поддерживаемые форматы: **любой UTF-8 текстовый файл** 
+
+*Например:* .txt .md .go .py .json ...
 ## Пример
 ```
 Hello world
@@ -33,6 +45,14 @@ In your string(s) 1 lines
 In your string(s) 2 words
 In your string(s) 1 spaces
 In your string(s) 10 letters
+```
+```
+text.txt
+
+In your string(s) 6 lines
+In your string(s) 29 words
+In your string(s) 19 spaces
+In your string(s) 78 letters
 ```
 ## Примечания
 - Слова разделяются пробельными символами
@@ -56,7 +76,7 @@ go build -o textstats
 - [x] Подсчёт символов
 - [x] Подсчёт пробелов
 - [x] README
-- [ ] Чтение из файла
+- [x] Чтение из файла
 - [ ] Поддержка Windows
 
 ...и многое другое
