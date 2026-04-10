@@ -78,6 +78,8 @@ go build -o textstats
 - [x] README
 - [x] Read from file
 - [ ] Windows support
+- [ ] GUI
+- [ ] Built-in text editor
 
 ...and much more
 
