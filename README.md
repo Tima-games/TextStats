@@ -1,4 +1,4 @@
-![Go](https://img.shields.io/badge/Go-1.26.0-blue)
+![Go](https://img.shields.io/badge/Go-1.26.2-blue)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](https://github.com/Tima-games/TextStats/blob/main/LICENSE)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS-red)
 ![Last commit](https://img.shields.io/github/last-commit/Tima-games/TextStats)
@@ -17,14 +17,15 @@ I made this project for learning Go, Git, GitHub and just for fun, so don't be t
 - Count letters (excluding spaces)
 - Count spaces
 - Read from file
+- Flags (in β version)
 
 ## Usage
 ```Bash
-./textstats-[your version/arch]
+./textstats-[your version/arch] [Flag(s)]
 ```
 **Type your text**
 
-**Finish input with Control + D (Linux/MacOS)**
+**Finish input with Enter & Control + D (Linux/MacOS)**
 
 or
 
@@ -37,7 +38,26 @@ or
 
 *For example:* .txt .md .go .py .json ...
 
-## Example
+### Flags (available in beta)
+
+*All supported flags:*
+
+**-h, --help - Shows help message and exit**
+
+**-v, --version - Shows version and exit**  
+
+**-l, --lines - Shows only lines count**
+
+**-w, --words - Shows only words** 
+
+**-s, --spaces - Shows only spaces count**
+
+**-c, --letters - Shows only letters count**
+
+**And you also can use it with files.**
+
+
+## Examples
 ```
 Hello world
 
@@ -53,6 +73,21 @@ In your string(s) 6 lines
 In your string(s) 29 words
 In your string(s) 19 spaces
 In your string(s) 78 letters
+```
+```
+-l
+Hello world
+
+In your string(s) 1 lines
+```
+```
+-v
+TextStats v1.5.0 (11-04-26 release)
+```
+```
+-c example.md
+
+In your string(s) 6561 letters
 ```
 ## Notes
 - Words are separated by whitespace
@@ -77,6 +112,7 @@ go build -o textstats
 - [x] Count spaces
 - [x] README
 - [x] Read from file
+- [x] Flags
 - [ ] Windows support
 - [ ] GUI
 - [ ] Built-in text editor
