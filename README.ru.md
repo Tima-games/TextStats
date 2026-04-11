@@ -1,4 +1,4 @@
-![Go](https://img.shields.io/badge/Go-1.26-blue)
+![Go](https://img.shields.io/badge/Go-1.25-blue)
 [![License](https://img.shields.io/badge/License-GPL--3.0-green)](https://github.com/Tima-games/TextStats/blob/main/LICENSE)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS-red)
 ![Last commit](https://img.shields.io/github/last-commit/Tima-games/TextStats)
